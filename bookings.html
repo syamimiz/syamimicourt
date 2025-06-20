@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CBS: Court Booking System | Bookings</title>
+    
+    <!-- bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- styel.css -->
+     <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- header -->
+    <div class="container my-4">
+      <div class="title">Bookings</div>
+    </div>
+
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <img src="img/logo.png" alt="CBS Logo" width="40px">
+        <a class="navbar-brand ms-2" href="#">Court Booking System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="bookings.html">Bookings</a></li>
+            <li class="nav-item"><a class="nav-link" href="profiles.html">Profiles</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="logout.html">Logout</a></li>
+          </ul>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="darkModeToggle" />
+            <label class="form-check-label" for="darkModeToggle" id="themeLabel">Dark Mode</label>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bookings Table -->
+    <div class="container my-4">
+      <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+          <h5 class="mb-0"><i class="fa-solid fa-calendar-days"></i> Court Bookings</h5>
+        </div>
+        <div class="card-body">
+          <table class="table table-hover table-striped">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Court</th>
+                <th scope="col">User</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Court 1</td>
+                <td>Ahmad Zulkifli</td>
+                <td>2025-06-20</td>
+                <td>6:00 PM</td>
+                <td><span class="badge bg-success"><i class="fa-solid fa-check"></i> Confirmed</span></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Court 2</td>
+                <td>Nora Aminah</td>
+                <td>2025-06-21</td>
+                <td>5:00 PM</td>
+                <td><span class="badge bg-warning text-dark"><i class="fa-solid fa-spinner"></i> Pending</span></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Court 3</td>
+                <td>Firdaus Malik</td>
+                <td>2025-06-21</td>
+                <td>8:00 PM</td>
+                <td><span class="badge bg-danger"><i class="fa-solid fa-xmark"></i> Cancelled</span></td>
+              </tr>
+              <!-- Add more bookings as needed -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer mt-auto py-3 bg-body-tertiary">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 mb-4 mb-md-0 d-flex align-items-center justify-content-center justify-content-md-start">
+            <img src="img/logo.png" alt="Court Logo" width="100" class="me-2">
+            <span class="text-muted">Court Booking System</span>
+          </div>
+          <div class="col-md-2 mb-4 mb-md-0">
+            <h6 class="fw-bold">About</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-muted text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-4 mb-md-0">
+            <h6 class="fw-bold">Support</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-muted text-decoration-none">Help Centre</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-4 mb-md-0">
+            <h6 class="fw-bold">Legal</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-muted text-decoration-none">Terms of Use</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h6 class="fw-bold">For Business</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-muted text-decoration-none">Facility Management</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">Location</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="mb-0 text-center text-muted small">&copy; 2025 | Court Booking System. All rights reserved.</p>
+    </footer>
+
+    <!-- bootstrap js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+    <!-- darkmode script -->
+     <script>
+        function setTheme(theme){
+            document.documentElement.setAttribute("data-bs-theme", theme);
+            localStorage.setItem("theme",theme);
+            document.getElementById("themeLabel").innerText = 
+                theme === "dark" ? "Dark Mode On" : "Dark Mode Off";
+        }
+
+        document
+            .getElementById("darkModeToggle")
+            .addEventListener("change", function (event) {
+                if (event.target.checked) {
+                    setTheme("dark");
+                } else {
+                    setTheme("");
+                }
+            });
+
+        window.onload = function () {
+            let savedTheme = localStorage.getItem("theme");
+            if(savedTheme) {
+                setTheme(savedTheme);
+                if (savedTheme === "dark") {
+                    document.getElementById("darkModeToggle").checked = true;
+                }
+            }
+        };
+     </script>
+  </body>
+</html>
